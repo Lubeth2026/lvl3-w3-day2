@@ -1,5 +1,6 @@
 import React from "react";
 import Numbers from "./Numbers";
+import Cats from "./Cats";
 
 //How arrays actually work//
 //MAP for the pet array//
@@ -17,6 +18,7 @@ export default function Primary() {
         <h2>Pet Names:</h2>
         {jsxNames}
         <Numbers/>
+        <Cats/>
       </div>
     </>
   );
