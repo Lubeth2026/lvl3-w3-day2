@@ -1,4 +1,5 @@
 import React from "react";
+import Numbers from "./Numbers";
 
 //How arrays actually work//
 //MAP for the pet array//
@@ -8,16 +9,14 @@ export default function Primary() {
   const name = "Milo";
   const petNames = [name, "Luna", "Daisy"];
  
-  const jsxNames = petNames.map(petName => {
-    <p key={petName}>{petName}</p>;
-  });
+  const jsxNames = petNames.map(petName => <p key={petName}>{petName}</p>);
 
   return (
     <>
       <div>
         <h2>Pet Names:</h2>
         {jsxNames}
-        
+        <Numbers/>
       </div>
     </>
   );
